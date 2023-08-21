@@ -80,19 +80,6 @@ const applyCupon = () => {
     
 }
 
-//last step ===> 
-const makePurchase = () => {
-    let modalEl = document.getElementById('modal');
-    modalEl.classList.remove('hidden')
-}
-
-const closeModal = () => {
-    let modalEl = document.getElementById('modal');
-    modalEl.classList.add('hidden');
-    resetCart()
-}
-
-
 const resetCart = () => {
     let cartEl = document.getElementById('cart-container');
     cartEl.innerHTML = '';
