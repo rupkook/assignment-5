@@ -4,7 +4,7 @@ const cart = [];
 let cupon = false;
 let totalPrice = 0;
 let discount = 0;
-let finalPrice = 0
+let finalPrice = 0;
 
 document.addEventListener('click', (e)=>{
     let el = e.target.closest('.category-card');
@@ -70,13 +70,13 @@ const applyCupon = () => {
         finalPrice = totalPrice - discount;
     }else{
         discount = 0;
-        finalPrice = totalPrice;
+        finalPrice = totalPrice + ' TK';
     }
     let discountEl = document.getElementById('discount');
-    discountEl.innerHTML = discount;
+    discountEl.innerHTML = discount + ' TK';
 
     let finalPriceEl = document.getElementById('final-price');
-    finalPriceEl.innerHTML = finalPrice;
+    finalPriceEl.innerHTML = finalPrice + " TK";
     
 }
 
