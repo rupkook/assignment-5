@@ -1,6 +1,6 @@
 // step-1 
 
-const cart = [];
+let cart = [];
 let cupon = false;
 let totalPrice = 0;
 let discount = 0;
@@ -96,4 +96,5 @@ const resetCart = () => {
     totalPrice = 0;
     discount = 0;
     finalPrice = 0;
+    cart = [];
 }
