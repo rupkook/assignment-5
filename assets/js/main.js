@@ -16,7 +16,7 @@ document.addEventListener('click', (e)=>{
         }
 
         if(price && title ){
-            cart.push({price,title})
+            cart.push({price,title});
             let parchesEl = document.getElementById('parches-button');
             parchesEl.classList.remove('disabled:opacity-50','disabled:cursor-not-allowed')
             parchesEl.removeAttribute('disabled');
@@ -52,7 +52,6 @@ const updateCart = () => {
         let cuponEl = document.getElementById('cupon-button');
         cuponEl.classList.remove('disabled:opacity-50','disabled:cursor-not-allowed')
         cuponEl.removeAttribute('disabled');
-        //Cupon code will go here.
     }
 }
 
@@ -98,3 +97,10 @@ const resetCart = () => {
     finalPrice = 0;
     cart = [];
 }
+
+
+
+
+
+
+
